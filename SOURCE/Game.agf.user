@@ -4,7 +4,7 @@
   <Component Name="SourceControl" />
   <WorkspaceState>
     <LastBuildConfiguration>Debug</LastBuildConfiguration>
-    <LastBuildGameFileName xml:space="preserve">_Debug=Dungeon Render Test 2,</LastBuildGameFileName>
+    <LastBuildGameFileName xml:space="preserve">_Debug=Dungeon Render Test 2,DataFile=Dungeon Render Test 2,Windows=Dungeon Render Test 2,Linux=Dungeon Render Test 2,Web=Dungeon Render Test 2,</LastBuildGameFileName>
     <RequiresRebuild>False</RequiresRebuild>
   </WorkspaceState>
 </AGSEditorUserData>
