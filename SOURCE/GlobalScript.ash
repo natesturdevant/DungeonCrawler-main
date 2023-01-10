@@ -3,3 +3,5 @@
 // place import definitions and #define names here to be used by all
 // scripts.
 
+
+import function Attack();

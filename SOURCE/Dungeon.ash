@@ -62,9 +62,10 @@ struct PlayerController
 	import void Move(int distance);
   import int GetPos(int x, int y);
   
+  
 
 };
-
+/*
 struct Stats{
   int Strength;
   int Vitality;
@@ -72,5 +73,5 @@ struct Stats{
   int Intelligence;
   
 };
-  
+  */
 import function renderVisionCone();
