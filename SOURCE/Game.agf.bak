@@ -95,8 +95,11 @@
       <MouseSpeed>1</MouseSpeed>
       <RenderAtScreenResolution>False</RenderAtScreenResolution>
       <Rotation>Unlocked</Rotation>
+      <ShowFPS>False</ShowFPS>
       <SpriteCacheSize>128</SpriteCacheSize>
       <TitleText xml:space="preserve">Dungeon Render Test 2 Setup</TitleText>
+      <TouchToMouseEmulation>OneFinger</TouchToMouseEmulation>
+      <TouchToMouseMotionMode>Direct</TouchToMouseMotionMode>
       <Translation />
       <UseCustomAppDataPath>False</UseCustomAppDataPath>
       <UseCustomSavePath>False</UseCustomSavePath>
@@ -664,7 +667,443 @@
     </Rooms>
     <GUIs>
       <GUIFolder Name="Main">
-        <SubFolders />
+        <SubFolders>
+          <GUIFolder Name="Combat">
+            <SubFolders />
+            <GUIs>
+              <GUIMain>
+                <NormalGUI>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <BlendMode>Normal</BlendMode>
+                  <BorderColor>0</BorderColor>
+                  <Clickable>True</Clickable>
+                  <Height>400</Height>
+                  <ID>14</ID>
+                  <Left>0</Left>
+                  <Name>gCombatButtons</Name>
+                  <OnClick />
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <Top>0</Top>
+                  <Transparency>0</Transparency>
+                  <Visible>False</Visible>
+                  <Width>640</Width>
+                  <ZOrder>0</ZOrder>
+                </NormalGUI>
+                <Controls>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>False</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>120</Height>
+                    <ID>0</ID>
+                    <Image>83</Image>
+                    <Left>222</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Enemy_3</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick>Enemy_3_OnClick</OnClick>
+                    <PushedImage>0</PushedImage>
+                    <Text />
+                    <TextAlignment>BottomLeft</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>167</Top>
+                    <Visible>True</Visible>
+                    <Width>100</Width>
+                    <ZOrder>0</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>25</Height>
+                    <ID>1</ID>
+                    <Image>0</Image>
+                    <Left>475</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>btnAttack</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick>btnAttack_OnClick</OnClick>
+                    <PushedImage>0</PushedImage>
+                    <Text>Attack</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>15</Top>
+                    <Visible>True</Visible>
+                    <Width>88</Width>
+                    <ZOrder>1</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>25</Height>
+                    <ID>2</ID>
+                    <Image>0</Image>
+                    <Left>475</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>btnRest</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>Rest</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>44</Top>
+                    <Visible>True</Visible>
+                    <Width>88</Width>
+                    <ZOrder>2</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>25</Height>
+                    <ID>3</ID>
+                    <Image>0</Image>
+                    <Left>475</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>btnSpecial</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>Special</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>74</Top>
+                    <Visible>True</Visible>
+                    <Width>88</Width>
+                    <ZOrder>3</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>25</Height>
+                    <ID>4</ID>
+                    <Image>0</Image>
+                    <Left>475</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>btnFlee</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick>Button2_OnClick</OnClick>
+                    <PushedImage>0</PushedImage>
+                    <Text>Flee</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>104</Top>
+                    <Visible>True</Visible>
+                    <Width>88</Width>
+                    <ZOrder>4</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>False</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>120</Height>
+                    <ID>5</ID>
+                    <Image>83</Image>
+                    <Left>222</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Enemy_1</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick>Enemy_1_OnClick</OnClick>
+                    <PushedImage>0</PushedImage>
+                    <Text />
+                    <TextAlignment>BottomLeft</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>44</Top>
+                    <Visible>True</Visible>
+                    <Width>100</Width>
+                    <ZOrder>5</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>False</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>120</Height>
+                    <ID>6</ID>
+                    <Image>83</Image>
+                    <Left>317</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Enemy_4</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick>Enemy_4_OnClick</OnClick>
+                    <PushedImage>0</PushedImage>
+                    <Text />
+                    <TextAlignment>BottomLeft</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>167</Top>
+                    <Visible>True</Visible>
+                    <Width>100</Width>
+                    <ZOrder>6</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>False</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>120</Height>
+                    <ID>7</ID>
+                    <Image>83</Image>
+                    <Left>317</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Enemy_2</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick>Enemy_2_OnClick</OnClick>
+                    <PushedImage>0</PushedImage>
+                    <Text />
+                    <TextAlignment>BottomLeft</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>44</Top>
+                    <Visible>True</Visible>
+                    <Width>100</Width>
+                    <ZOrder>7</ZOrder>
+                  </GUIButton>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <BackgroundColor>8</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <BlendMode>Normal</BlendMode>
+                  <BorderColor>2</BorderColor>
+                  <Clickable>True</Clickable>
+                  <Height>240</Height>
+                  <ID>15</ID>
+                  <Left>0</Left>
+                  <Name>gTurnOrder</Name>
+                  <OnClick />
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <Top>30</Top>
+                  <Transparency>0</Transparency>
+                  <Visible>True</Visible>
+                  <Width>200</Width>
+                  <ZOrder>0</ZOrder>
+                </NormalGUI>
+                <Controls>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>27</Height>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Left>17</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Button1</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>a</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>8</Top>
+                    <Visible>True</Visible>
+                    <Width>161</Width>
+                    <ZOrder>0</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>27</Height>
+                    <ID>1</ID>
+                    <Image>0</Image>
+                    <Left>17</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Button2</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>a</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>42</Top>
+                    <Visible>True</Visible>
+                    <Width>161</Width>
+                    <ZOrder>1</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>27</Height>
+                    <ID>2</ID>
+                    <Image>0</Image>
+                    <Left>23</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Button3</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>a</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>73</Top>
+                    <Visible>True</Visible>
+                    <Width>161</Width>
+                    <ZOrder>2</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>27</Height>
+                    <ID>3</ID>
+                    <Image>0</Image>
+                    <Left>32</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Button4</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>a</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>107</Top>
+                    <Visible>True</Visible>
+                    <Width>161</Width>
+                    <ZOrder>3</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>27</Height>
+                    <ID>4</ID>
+                    <Image>0</Image>
+                    <Left>32</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Button5</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>a</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>135</Top>
+                    <Visible>True</Visible>
+                    <Width>161</Width>
+                    <ZOrder>4</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>27</Height>
+                    <ID>5</ID>
+                    <Image>0</Image>
+                    <Left>32</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Button6</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>a</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>165</Top>
+                    <Visible>True</Visible>
+                    <Width>161</Width>
+                    <ZOrder>5</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>27</Height>
+                    <ID>6</ID>
+                    <Image>0</Image>
+                    <Left>23</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Button7</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>a</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>192</Top>
+                    <Visible>True</Visible>
+                    <Width>161</Width>
+                    <ZOrder>6</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>True</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>27</Height>
+                    <ID>7</ID>
+                    <Image>0</Image>
+                    <Left>17</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>Button8</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>a</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>217</Top>
+                    <Visible>True</Visible>
+                    <Width>161</Width>
+                    <ZOrder>7</ZOrder>
+                  </GUIButton>
+                </Controls>
+              </GUIMain>
+            </GUIs>
+          </GUIFolder>
+        </SubFolders>
         <GUIs>
           <GUIMain>
             <NormalGUI>
@@ -1528,149 +1967,6 @@
               <ZOrder>0</ZOrder>
             </NormalGUI>
             <Controls />
-          </GUIMain>
-          <GUIMain>
-            <NormalGUI>
-              <BackgroundColor>0</BackgroundColor>
-              <BackgroundImage>0</BackgroundImage>
-              <BlendMode>Normal</BlendMode>
-              <BorderColor>0</BorderColor>
-              <Clickable>True</Clickable>
-              <Height>400</Height>
-              <ID>14</ID>
-              <Left>0</Left>
-              <Name>gCombatButtons</Name>
-              <OnClick />
-              <PopupStyle>Normal</PopupStyle>
-              <PopupYPos>0</PopupYPos>
-              <Top>0</Top>
-              <Transparency>0</Transparency>
-              <Visible>False</Visible>
-              <Width>640</Width>
-              <ZOrder>0</ZOrder>
-            </NormalGUI>
-            <Controls>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>120</Height>
-                <ID>0</ID>
-                <Image>83</Image>
-                <Left>274</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>0</MouseoverImage>
-                <Name>Button1</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick />
-                <PushedImage>0</PushedImage>
-                <Text />
-                <TextAlignment>BottomLeft</TextAlignment>
-                <TextColor>0</TextColor>
-                <Top>114</Top>
-                <Visible>True</Visible>
-                <Width>100</Width>
-                <ZOrder>0</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>25</Height>
-                <ID>1</ID>
-                <Image>0</Image>
-                <Left>475</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>0</MouseoverImage>
-                <Name>btnAttack</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick>btnAttack_OnClick</OnClick>
-                <PushedImage>0</PushedImage>
-                <Text>Attack</Text>
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
-                <Top>15</Top>
-                <Visible>True</Visible>
-                <Width>88</Width>
-                <ZOrder>1</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>25</Height>
-                <ID>2</ID>
-                <Image>0</Image>
-                <Left>475</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>0</MouseoverImage>
-                <Name>btnRest</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick />
-                <PushedImage>0</PushedImage>
-                <Text>Rest</Text>
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
-                <Top>44</Top>
-                <Visible>True</Visible>
-                <Width>88</Width>
-                <ZOrder>2</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>25</Height>
-                <ID>3</ID>
-                <Image>0</Image>
-                <Left>475</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>0</MouseoverImage>
-                <Name>btnSpecial</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick />
-                <PushedImage>0</PushedImage>
-                <Text>Special</Text>
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
-                <Top>74</Top>
-                <Visible>True</Visible>
-                <Width>88</Width>
-                <ZOrder>3</ZOrder>
-              </GUIButton>
-              <GUIButton>
-                <ClickAction>RunScript</ClickAction>
-                <Clickable>True</Clickable>
-                <ClipImage>False</ClipImage>
-                <Enabled>True</Enabled>
-                <Font>0</Font>
-                <Height>25</Height>
-                <ID>4</ID>
-                <Image>0</Image>
-                <Left>475</Left>
-                <Locked>False</Locked>
-                <MouseoverImage>0</MouseoverImage>
-                <Name>btnFlee</Name>
-                <NewModeNumber>0</NewModeNumber>
-                <OnClick>Button2_OnClick</OnClick>
-                <PushedImage>0</PushedImage>
-                <Text>Flee</Text>
-                <TextAlignment>TopCenter</TextAlignment>
-                <TextColor>0</TextColor>
-                <Top>104</Top>
-                <Visible>True</Visible>
-                <Width>88</Width>
-                <ZOrder>4</ZOrder>
-              </GUIButton>
-            </Controls>
           </GUIMain>
         </GUIs>
       </GUIFolder>
@@ -2556,6 +2852,11 @@
           <DefaultValue>0</DefaultValue>
           <Name>BackgroundSwapping</Name>
           <Type>int</Type>
+        </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>false</DefaultValue>
+          <Name>inCombat</Name>
+          <Type>bool</Type>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
@@ -7584,56 +7885,110 @@
     <DeletedViews />
     <Scripts>
       <ScriptFolder Name="Main">
-        <SubFolders />
+        <SubFolders>
+          <ScriptFolder Name="Combat">
+            <SubFolders />
+            <ScriptAndHeaders>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>Stats.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>469216255</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>Stats.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>469216255</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>Equipment.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>761545876</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>Equipment.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>761545876</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>Entity.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>1867108547</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>Entity.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>1867108547</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>Battle Manager.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>330878459</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>Battle Manager.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>330878459</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
+            </ScriptAndHeaders>
+          </ScriptFolder>
+        </SubFolders>
         <ScriptAndHeaders>
-          <ScriptAndHeader>
-            <ScriptAndHeader_Header>
-              <Script>
-                <FileName>Battle.ash</FileName>
-                <Name />
-                <Description />
-                <Author />
-                <Version />
-                <Key>330878459</Key>
-                <IsHeader>True</IsHeader>
-              </Script>
-            </ScriptAndHeader_Header>
-            <ScriptAndHeader_Script>
-              <Script>
-                <FileName>Battle.asc</FileName>
-                <Name />
-                <Description />
-                <Author />
-                <Version />
-                <Key>330878459</Key>
-                <IsHeader>False</IsHeader>
-              </Script>
-            </ScriptAndHeader_Script>
-          </ScriptAndHeader>
-          <ScriptAndHeader>
-            <ScriptAndHeader_Header>
-              <Script>
-                <FileName>Stats.ash</FileName>
-                <Name />
-                <Description />
-                <Author />
-                <Version />
-                <Key>1115401967</Key>
-                <IsHeader>True</IsHeader>
-              </Script>
-            </ScriptAndHeader_Header>
-            <ScriptAndHeader_Script>
-              <Script>
-                <FileName>Stats.asc</FileName>
-                <Name />
-                <Description />
-                <Author />
-                <Version />
-                <Key>1115401967</Key>
-                <IsHeader>False</IsHeader>
-              </Script>
-            </ScriptAndHeader_Script>
-          </ScriptAndHeader>
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
