@@ -22,6 +22,7 @@ struct Entity
 	import void Initialize(String name, int level);
 	
 	// Result
+	import int GetDamage();
 	import void TakeDamage(int damage);
 	
 	// Actions
@@ -30,4 +31,5 @@ struct Entity
 	import void UseItem(int targetSlot);
 	import void TryToFlee();
 	
+	import String GetStringHPSP();
 };

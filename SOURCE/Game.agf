@@ -694,7 +694,7 @@
                 <Controls>
                   <GUIButton>
                     <ClickAction>RunScript</ClickAction>
-                    <Clickable>False</Clickable>
+                    <Clickable>True</Clickable>
                     <ClipImage>False</ClipImage>
                     <Enabled>True</Enabled>
                     <Font>0</Font>
@@ -754,7 +754,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>btnRest</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick />
+                    <OnClick>btnRest_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>Rest</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -802,7 +802,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>btnFlee</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick>Button2_OnClick</OnClick>
+                    <OnClick>btnFlee_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>Flee</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -814,7 +814,7 @@
                   </GUIButton>
                   <GUIButton>
                     <ClickAction>RunScript</ClickAction>
-                    <Clickable>False</Clickable>
+                    <Clickable>True</Clickable>
                     <ClipImage>False</ClipImage>
                     <Enabled>True</Enabled>
                     <Font>0</Font>
@@ -838,7 +838,7 @@
                   </GUIButton>
                   <GUIButton>
                     <ClickAction>RunScript</ClickAction>
-                    <Clickable>False</Clickable>
+                    <Clickable>True</Clickable>
                     <ClipImage>False</ClipImage>
                     <Enabled>True</Enabled>
                     <Font>0</Font>
@@ -862,7 +862,7 @@
                   </GUIButton>
                   <GUIButton>
                     <ClickAction>RunScript</ClickAction>
-                    <Clickable>False</Clickable>
+                    <Clickable>True</Clickable>
                     <ClipImage>False</ClipImage>
                     <Enabled>True</Enabled>
                     <Font>0</Font>
@@ -884,6 +884,102 @@
                     <Width>100</Width>
                     <ZOrder>7</ZOrder>
                   </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>False</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>18</Height>
+                    <ID>8</ID>
+                    <Image>0</Image>
+                    <Left>234</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>gSelector_1</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>Selector</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>155</Top>
+                    <Visible>False</Visible>
+                    <Width>83</Width>
+                    <ZOrder>8</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>False</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>18</Height>
+                    <ID>9</ID>
+                    <Image>0</Image>
+                    <Left>340</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>gSelector_2</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>Selector</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>155</Top>
+                    <Visible>False</Visible>
+                    <Width>83</Width>
+                    <ZOrder>9</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>False</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>18</Height>
+                    <ID>10</ID>
+                    <Image>0</Image>
+                    <Left>234</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>gSelector_3</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>Selector</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>278</Top>
+                    <Visible>False</Visible>
+                    <Width>83</Width>
+                    <ZOrder>10</ZOrder>
+                  </GUIButton>
+                  <GUIButton>
+                    <ClickAction>RunScript</ClickAction>
+                    <Clickable>False</Clickable>
+                    <ClipImage>False</ClipImage>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>18</Height>
+                    <ID>11</ID>
+                    <Image>0</Image>
+                    <Left>340</Left>
+                    <Locked>False</Locked>
+                    <MouseoverImage>0</MouseoverImage>
+                    <Name>gSelector_4</Name>
+                    <NewModeNumber>0</NewModeNumber>
+                    <OnClick />
+                    <PushedImage>0</PushedImage>
+                    <Text>Selector</Text>
+                    <TextAlignment>TopCenter</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>278</Top>
+                    <Visible>False</Visible>
+                    <Width>83</Width>
+                    <ZOrder>11</ZOrder>
+                  </GUIButton>
                 </Controls>
               </GUIMain>
               <GUIMain>
@@ -902,7 +998,7 @@
                   <PopupYPos>0</PopupYPos>
                   <Top>30</Top>
                   <Transparency>0</Transparency>
-                  <Visible>True</Visible>
+                  <Visible>False</Visible>
                   <Width>200</Width>
                   <ZOrder>0</ZOrder>
                 </NormalGUI>
@@ -921,7 +1017,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>Button1</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick />
+                    <OnClick>Button1_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>a</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -945,7 +1041,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>Button2</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick />
+                    <OnClick>Button2_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>a</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -969,7 +1065,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>Button3</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick />
+                    <OnClick>Button3_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>a</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -993,7 +1089,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>Button4</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick />
+                    <OnClick>Button4_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>a</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -1017,7 +1113,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>Button5</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick />
+                    <OnClick>Button5_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>a</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -1041,7 +1137,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>Button6</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick />
+                    <OnClick>Button6_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>a</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -1065,7 +1161,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>Button7</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick />
+                    <OnClick>Button7_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>a</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -1089,7 +1185,7 @@
                     <MouseoverImage>0</MouseoverImage>
                     <Name>Button8</Name>
                     <NewModeNumber>0</NewModeNumber>
-                    <OnClick />
+                    <OnClick>Button8_OnClick</OnClick>
                     <PushedImage>0</PushedImage>
                     <Text>a</Text>
                     <TextAlignment>TopCenter</TextAlignment>
@@ -1099,6 +1195,205 @@
                     <Width>161</Width>
                     <ZOrder>7</ZOrder>
                   </GUIButton>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <BackgroundColor>8</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <BlendMode>Normal</BlendMode>
+                  <BorderColor>2</BorderColor>
+                  <Clickable>True</Clickable>
+                  <Height>100</Height>
+                  <ID>16</ID>
+                  <Left>120</Left>
+                  <Name>gHeroes</Name>
+                  <OnClick />
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <Top>280</Top>
+                  <Transparency>0</Transparency>
+                  <Visible>False</Visible>
+                  <Width>400</Width>
+                  <ZOrder>0</ZOrder>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>22</Height>
+                    <ID>0</ID>
+                    <Left>1</Left>
+                    <Locked>False</Locked>
+                    <Name>gHero_1_Name</Name>
+                    <Text>Hero_1</Text>
+                    <TextAlignment>Center</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>14</Top>
+                    <Visible>True</Visible>
+                    <Width>103</Width>
+                    <ZOrder>0</ZOrder>
+                  </GUILabel>
+                  <GUILabel>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>22</Height>
+                    <ID>1</ID>
+                    <Left>1</Left>
+                    <Locked>False</Locked>
+                    <Name>gHero_2_Name</Name>
+                    <Text>Hero_2</Text>
+                    <TextAlignment>Center</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>61</Top>
+                    <Visible>True</Visible>
+                    <Width>103</Width>
+                    <ZOrder>1</ZOrder>
+                  </GUILabel>
+                  <GUILabel>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>22</Height>
+                    <ID>2</ID>
+                    <Left>198</Left>
+                    <Locked>False</Locked>
+                    <Name>gHero_3_Name</Name>
+                    <Text>Hero_3</Text>
+                    <TextAlignment>Center</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>14</Top>
+                    <Visible>True</Visible>
+                    <Width>103</Width>
+                    <ZOrder>2</ZOrder>
+                  </GUILabel>
+                  <GUILabel>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>22</Height>
+                    <ID>3</ID>
+                    <Left>198</Left>
+                    <Locked>False</Locked>
+                    <Name>gHero_4_Name</Name>
+                    <Text>Hero_4</Text>
+                    <TextAlignment>Center</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>61</Top>
+                    <Visible>True</Visible>
+                    <Width>103</Width>
+                    <ZOrder>3</ZOrder>
+                  </GUILabel>
+                  <GUILabel>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Font>2</Font>
+                    <Height>21</Height>
+                    <ID>4</ID>
+                    <Left>95</Left>
+                    <Locked>False</Locked>
+                    <Name>gHero_1_HPSP</Name>
+                    <Text xml:space="preserve">HP: 10/10[SP: 10/10</Text>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>14</Top>
+                    <Visible>True</Visible>
+                    <Width>77</Width>
+                    <ZOrder>4</ZOrder>
+                  </GUILabel>
+                  <GUILabel>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Font>2</Font>
+                    <Height>21</Height>
+                    <ID>5</ID>
+                    <Left>95</Left>
+                    <Locked>False</Locked>
+                    <Name>gHero_2_HPSP</Name>
+                    <Text xml:space="preserve">HP: 10/10[SP: 10/10</Text>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>61</Top>
+                    <Visible>True</Visible>
+                    <Width>77</Width>
+                    <ZOrder>5</ZOrder>
+                  </GUILabel>
+                  <GUILabel>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Font>2</Font>
+                    <Height>21</Height>
+                    <ID>6</ID>
+                    <Left>298</Left>
+                    <Locked>False</Locked>
+                    <Name>gHero_3_HPSP</Name>
+                    <Text xml:space="preserve">HP: 10/10[SP: 10/10</Text>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>14</Top>
+                    <Visible>True</Visible>
+                    <Width>77</Width>
+                    <ZOrder>6</ZOrder>
+                  </GUILabel>
+                  <GUILabel>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Font>2</Font>
+                    <Height>21</Height>
+                    <ID>7</ID>
+                    <Left>298</Left>
+                    <Locked>False</Locked>
+                    <Name>gHero_4_HPSP</Name>
+                    <Text xml:space="preserve">HP: 10/10[SP: 10/10</Text>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>61</Top>
+                    <Visible>True</Visible>
+                    <Width>77</Width>
+                    <ZOrder>7</ZOrder>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <BackgroundColor>8</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <BlendMode>Normal</BlendMode>
+                  <BorderColor>2</BorderColor>
+                  <Clickable>True</Clickable>
+                  <Height>20</Height>
+                  <ID>17</ID>
+                  <Left>120</Left>
+                  <Name>gInfoBar</Name>
+                  <OnClick />
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <Top>380</Top>
+                  <Transparency>0</Transparency>
+                  <Visible>False</Visible>
+                  <Width>400</Width>
+                  <ZOrder>0</ZOrder>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Font>0</Font>
+                    <Height>20</Height>
+                    <ID>0</ID>
+                    <Left>0</Left>
+                    <Locked>False</Locked>
+                    <Name>gInfoBarLabel</Name>
+                    <Text xml:space="preserve">New Label</Text>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Top>0</Top>
+                    <Visible>True</Visible>
+                    <Width>400</Width>
+                    <ZOrder>0</ZOrder>
+                  </GUILabel>
                 </Controls>
               </GUIMain>
             </GUIs>
