@@ -1,5 +1,6 @@
 // new module header
 
+import void doBattle();
 
 #define FAR_4_SPRITE 20
 #define CLEAR_SCREEN 25
